@@ -1,0 +1,31 @@
+P1c.html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Event Listener Example</title> 
+</head> 
+<body> 
+<h2 id="text">Click the button to change this text</h2> 
+    <button id="myButton">Click Me</button> 
+ 
+    <script src="script3.js"></script> 
+</body> 
+</html> 
+ 
+ 
+script3.js 
+ 
+document.addEventListener("DOMContentLoaded", function () { 
+ 
+    let button = document.getElementById("myButton"); 
+ 
+    button.addEventListener("click", function () { 
+ 
+        let text = document.getElementById("text"); 
+ 
+        text.textContent = "The text has been changed!"; 
+        text.style.color = "green"; 
+ 
+    }); 
+ 
+});
